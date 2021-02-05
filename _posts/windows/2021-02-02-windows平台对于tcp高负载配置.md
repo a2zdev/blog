@@ -3,6 +3,8 @@ layout: default
 title: 【转载】windows平台对于TCP高负载配置
 ---
 
+## 【转载】windows平台对于TCP高负载配置
+
 Adjusting TCP Settings for Heavy Load on Windows
 
 The underlying Search architecture that directs searches across multiple physical partitions uses TCP/IP ports and non-blocking NIO SocketChannels to connect to the Search engines. These connections remain open in the TIME_WAIT state until the operating system times them out. Consequently, under heavy load conditions, the available ports on the machine running the Routing module can be exhausted.
