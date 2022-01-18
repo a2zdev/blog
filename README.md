@@ -1,4 +1,4 @@
 # blog
 my blog
 
-url: https://zhanzhandev.github.io/blog/
+url: https://a2zdev.github.io/blog/
