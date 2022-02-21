@@ -1,0 +1,8 @@
+# 文件: _config.yml
+plugins: [jekyll-paginate]
+webrick:
+  headers:
+    My-Header: e7er's blog
+    My-Other-Header: e7er's blog
+paginate: 10
+theme: jekyll-theme-minimal
