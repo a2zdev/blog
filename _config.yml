@@ -4,3 +4,4 @@ webrick:
     My-Header: e7er's blog
     My-Other-Header: e7er's blog
 paginate: 10
+theme: jekyll-theme-minimal
