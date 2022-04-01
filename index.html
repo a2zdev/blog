@@ -16,9 +16,10 @@ title: e7er's blog
 <p class="author">
     <span class="date">{{ post.date }}</span>
 </p>
-<div class="content">
-    {{ post.content }}
-</div>
+<!--<div class="content">-->
+<!--    {{ post.content }}-->
+<!--</div>-->
+<p>{{ post.excerpt }}</p>
 {% endfor %}
 <!-- 分页链接 -->
 {% if paginator.total_pages > 1 %}
