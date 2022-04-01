@@ -29,5 +29,3 @@ To set MaxUserPort (ephemeral port range):
 1.Use the regedit command to access the HKEY_LOCAL_MACHINESYSTEMCurrentControlSet ServicesTCPIPParameters registry subkey.
 2.Create a new REG_DWORD value named MaxUserPort.3.Set this value to 32768.
 4.Stop and restart the system.
-
-引用：https://docs.oracle.com/cd/E26180_01/Search.94/ATGSearchAdmin/html/s1207adjustingtcpsettingsforheavyload01.html#:~:text=On%20Windows%20platforms%2C%20the%20default,of%2033%20connections%20per%20second.
