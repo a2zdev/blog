@@ -3,7 +3,7 @@ layout: default
 title: ubuntu环境idea运行springboot项目提示异常
 ---
 
-## ubuntu环境idea运行springboot项目提示异常
+### ubuntu环境idea运行springboot项目提示异常
 
 错误描述如下：
 Description:
