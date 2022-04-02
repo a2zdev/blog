@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 【转载】windows平台对于TCP高负载配置
+title: 转载-windows对于TCP高负载配置
 ---
 
 ### 转载-windows对于TCP高负载配置
