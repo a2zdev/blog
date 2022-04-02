@@ -16,3 +16,15 @@ sudo docker run --detach \
   --volume /srv/gitlab/data:/var/opt/gitlab \
   gitlab/gitlab-ce:latest
 ```
+
+- postgres
+```shell
+docker run -it 
+  --name postgres 
+  --restart always 
+  -e POSTGRES_PASSWORD='abc123' 
+  -e ALLOW_IP_RANGE=0.0.0.0/0 
+  -v /home/postgres/data:/var/lib/postgresql 
+  -p 5432:5432 
+  -d postgres
+```
