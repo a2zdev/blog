@@ -37,7 +37,9 @@ docker run --name mysql8 \
 -v /home/a/container/data/mysql:/var/lib/mysql \
 -v /home/a/container/data/mysql:/etc/mysql/conf.d \
 --restart=always \
--itd mysql:8
+-itd mysql:8 \
+--character-set-server=utf8mb4 
+--collation-server=utf8mb4_unicode_ci
 ```
 
 - nacos
