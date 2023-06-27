@@ -59,3 +59,47 @@ docker run -itd \
 -v /home/a/container/data/nacos/logs:/home/nacos/logs \
 nacos/nacos-server
 ```
+
+- libreoffice
+```shell
+FROM centos:7
+ADD LibreOffice_7.5.4_Linux_x86-64_rpm.tar.gz /home/office
+
+# install LibreOffice
+RUN yum localinstall /home/office/LibreOffice_7.5.4.2_Linux_x86-64_rpm/RPMS/* -y  \
+        && rm -rf /home/office
+
+# config ENV
+ENV PATH /opt/libreoffice7.5/program:$PATH
+
+# install dependency
+RUN yum install cairo -y \
+        && yum install cups-libs -y \
+        && yum install libSM -y
+
+
+# install font 
+RUN yum groupinstall "Fonts" -y \
+        && yum clean all
+
+# ADD jdk
+ADD jdk-8u202-linux-x64.tar.gz /usr/local/
+
+# config ENV
+ENV PATH /usr/local/jdk1.8.0_202/bin:$PATH
+
+# ADD App
+ADD *.jar /app/app.jar
+
+#ADD file/* /app/file/
+
+# expose port
+EXPOSE 8080
+
+WORKDIR /app
+
+# run app
+CMD ["java","-jar","app.jar"]
+#CMD ["bash"]
+
+```
