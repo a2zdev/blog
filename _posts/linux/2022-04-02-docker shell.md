@@ -90,16 +90,17 @@ ENV PATH /usr/local/jdk1.8.0_202/bin:$PATH
 
 # ADD App
 ADD *.jar /app/app.jar
-
 #ADD file/* /app/file/
 
 # expose port
 EXPOSE 8080
-
 WORKDIR /app
 
 # run app
 CMD ["java","-jar","app.jar"]
 #CMD ["bash"]
-
+```
+- libreoffice
+```
+docker run --name libreoffice -v /home/a/dockerFile/file:/app/file --net=host -itd libreoffice
 ```
